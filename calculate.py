@@ -95,7 +95,7 @@ print("CustomerName PeriodTitle PeriodStartDate PeriodEndDate AllocatedAmount")
 for period_amount in period_amounts:
     print(customer, period_amount["PeriodTitle"], period_amount["PeriodStartDate"], period_amount["PeriodEndDate"], "$" + str(period_amount["AllocatedAmount"]))
 
-# readd totals
+# read totals
 total = 0
 for period_amount in period_amounts:
     total += period_amount["AllocatedAmount"]
